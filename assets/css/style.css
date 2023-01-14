@@ -1,33 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 :root {
-
     --primary-color: rgb(5, 159, 173);
+    --secondary-color: rgb(255, 208, 0);
+    --submmit-color: rgb(21, 206, 89);
+    --darker-submmit-color: rgb(10, 99, 43);
 
 }
-
 * {
     box-sizing: border-box;
     outline: 0;
-}
 
+}
 body {
     margin: 0;
     padding: 0;
     background: var(--primary-color);
-    font-size: 1.2em;
+    font-family:'Open sans', sans-serif;
+    font-size: 1.3em;
     line-height: 1.5em;
 }
 
-.container {
-    max-width: 640px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+h1, h2, h3, nav, footer{
+    text-align: center;
+}
+
+p {
     text-align: justify;
+    padding: 60px;
 
 }
 
-button {
+.container {
+    max-width: 60%;
+    margin: 10px auto;
+    background: #fff;
+    padding: 30px;
+
+}
+
+#input-teste-4 {
+    display: block;
+    height: 200px;
+
+}
+
+.formulario {
+    font-size: 20px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 60px;
+}
+
+form input:focus {
+    outline: 5px solid var(--primary-color);
+}
+
+form button {
     border: none;
     background: var(--primary-color);
     color: #fff;
@@ -36,4 +64,20 @@ button {
     height: 50px;
     cursor: pointer;
     margin-top: 40px;
+}
+
+form input:hover {
+    outline: 2px solid var(--secondary-color);
+}
+
+form button:hover {
+    background: var(--submmit-color);
+}
+
+form button:active {
+    background: var(--darker-submmit-color);
+}
+
+#conteudo{
+    padding: 30px 0px;
 }
