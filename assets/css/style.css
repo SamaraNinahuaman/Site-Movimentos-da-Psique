@@ -2,6 +2,7 @@
 :root {
     --primary-color: rgb(5, 159, 173);
     --secondary-color: rgb(255, 208, 0);
+    --primary-color-soft:rgb(157, 220, 226);
     --submmit-color: rgb(21, 206, 89);
     --darker-submmit-color: rgb(10, 99, 43);
 
@@ -9,7 +10,7 @@
 * {
     box-sizing: border-box;
     outline: 0;
-
+    font-family: Roboto;
 }
 body {
     margin: 0;
@@ -26,44 +27,100 @@ h1, h2, h3, nav, footer{
 
 p {
     text-align: justify;
-    padding: 60px;
+    padding: 0 30px 0;
+}
+.btnsubmit {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.imagem {
+    width: 350px;
+    height: 400px;
+    background-image: url(https://movimentosdapsique.files.wordpress.com/2018/02/eu-28-e1518181120501.jpg?w=194&h=300);
+    background-size: cover;
+    background-position: center top;
+}
 
+.sup {
+    max-width: 90%;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .container {
-    max-width: 60%;
+    max-width: 70%;
+    margin: 5px auto;
+    background: #fff;
+    padding: 0 30px 0;
+    left: 0;
+    border-radius: 20px;
+}
+.inf {
+    max-width: 90%;
+    margin: 10px auto;
+    background: #fff;
+    padding: 0 30px 0;
+    border-radius: 20px;
+
+}
+
+#textarea {
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+}
+
+#lateraldir {
+    max-width: 50%;
     margin: 10px auto;
     background: #fff;
     padding: 30px;
-
+    right: 0;
 }
-
-#input-teste-4 {
-    display: block;
-    height: 200px;
-
-}
-
 .formulario {
     font-size: 20px;
-    display: inline-block;
     align-self: flex-start;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 form input:focus {
     outline: 5px solid var(--primary-color);
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    border:rgb(157, 220, 226);
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 10px 20px;
+    
+}
+
+a:hover{
+    background: var(--primary-color-soft);
+}
+
 form button {
-    border: none;
     background: var(--primary-color);
     color: #fff;
     font-size: 18px;
-    font-weight: 700;
-    height: 50px;
+    font-weight: bold;
+    height: 40px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+label {
+    cursor: pointer;
 }
 
 form input:hover {
@@ -79,5 +136,5 @@ form button:active {
 }
 
 #conteudo{
-    padding: 30px 0px;
+    padding: 10px 30px;
 }
