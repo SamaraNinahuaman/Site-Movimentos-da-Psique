@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="./css/style.css">
+
+<h1>Atendimento Online</h1>
+<h3>Ficha de Inscrição</h3>
+<p>
+    Por favor, preencha abaixo seus dados pessoais para que a psicóloga possa te contatar para fazer os agendamentos.
+    <br>Destaque seu contato preferencial com um *.
+    <br>Estes dados serão utilizados apenas para fazer os agendamentos e não serão divulgados ou disponibilizados para
+    nenhum outro fim.
+</p>
+<div class="formulario">
+    <form action="#">
+        <label for="input-nomeCompleto">Nome completo:</label>
+        <input type="text" id="input-nomeCompleto" name="nomeCompleto" placeholder="Seu nome">
+
+        <label for="input-telefoneContato">Telefone para contato:</label>
+        <input type="text" id="input-telefoneContato" name="telefoneContato" placeholder="(XX)9 9999-9999">
+
+        <label for="input-email">Email:</label>
+        <input type="email" id="input-email" name="email" placeholder="email@mail.com">
+
+        <label for="select">Selecione abaixo sua preferência de periodo:</label>
+        <select id="select" name="select">
+            <option value="segundaTarde">Segunda Tarde</option>
+            <option value="tercaTarde">Terça Tarde</option>
+        </select>
+    </form>
+</div>
+<p> Dados Complementares: Para que eu possa ter uma ideia inicial do seu caso, por favor preencha os dados que
+    achar relevantes a seguir:
+</p>
+<div class="formulario">
+    <form action="#">
+        <label for="cidadeEstado">Cidade/Estado onde reside:</label>
+        <input type="text" id="cidadeEstado" name="cidadeEstado" placeholder="São Paulo/SP">
+        <p>
+            Gênero: <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+            <label for="naoBinario">Não Binário</label>
+            <input type="radio" id="naoBinario" name="genero" value="naoBinario"><br>
+        </p>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+
+        <label for="profissao">Profissão:</label>
+        <input type="text" id="profissao" name="profissao" placeholder="Sua profissão">
+
+        <label for="textareaSintomas">Quais os sintomas mais relevantes que você tem sentido no último mês?</label>
+        <textarea name="textareaSintomas" id="textareaSintomas"></textarea>
+        <p>
+            Tem tido acompanhamento psiquiátrico? <br>
+            <label for="sim">Sim</label>
+            <input type="radio" id="sim" name="psiquiatra" value="sim"><br>
+            <label for="nao">Não</label>
+            <input type="radio" id="nao" name="psiquiatra" value="nao"><br>
+        </p>
+
+        <label for="medicação">Medicação:</label>
+        <input type="text" id="medicacao" name="medicacao" placeholder="Toma alguma medicação relevante?">
+
+        <label for="textareaMotivo">De forma resumida, o que te levou/leva a buscar atendimento?</label>
+        <textarea name="textareaMotivo" id="textareaMotivo"></textarea>
+
+        <div class="btnsubmit">
+            <button type="submit" value="submit">Enviar</button>
+        </div>
+    </form>
+
+</div>
