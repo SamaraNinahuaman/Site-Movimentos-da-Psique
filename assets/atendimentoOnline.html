@@ -11,59 +11,50 @@
 <div class="formulario">
     <form action="#">
         <label for="input-nomeCompleto">Nome completo:</label>
-        <input type="text" id="input-nomeCompleto" name="nomeCompleto" placeholder="Seu nome">
+        <input class= text type="text" id="input-nomeCompleto" name="nomeCompleto" placeholder="Seu nome" required>
 
-        <label for="input-telefoneContato">Telefone para contato:</label>
-        <input type="text" id="input-telefoneContato" name="telefoneContato" placeholder="(XX)9 9999-9999">
+        <br><br><label for="input-telefoneContato">Telefone para contato:</label>
+        <input class= text type="text" id="input-telefoneContato" name="telefoneContato" placeholder="(XX)9 9999-9999">
 
-        <label for="input-email">Email:</label>
-        <input type="email" id="input-email" name="email" placeholder="email@mail.com">
+        <br><br><label for="input-email">Email:</label>
+        <input class= text type="email" id="input-email" name="email" placeholder="email@mail.com">
 
-        <label for="select">Selecione abaixo sua preferência de periodo:</label>
-        <select id="select" name="select">
+        <br><br><label for="cidadeEstado">Cidade/Estado onde reside:</label>
+        <input class= text type="text" id="cidadeEstado" name="cidadeEstado" placeholder="São Paulo/SP">
+
+        <br><br><label for="dataNascimento">Data de Nascimento:</label>
+        <input class="date" type="date" id="dataNascimento" name="dataNascimento">
+
+        <br><br><div class="radio">
+            Gênero: <br>
+            <input type="radio" id="feminino" name="genero" value="feminino">Feminino<br>
+            <input type="radio" id="masculino" name="genero" value="masculino">Masculino<br>
+            <input type="radio" id="naoBinario" name="genero" value="naoBinario">Não Binário<br>
+        </div>
+       
+       <br><label for="profissao">Profissão:</label>
+        <input class= text type="text" id="profissao" name="profissao" placeholder="Sua profissão">
+
+        <br><br><div class="radio">
+            <label>Tem tido acompanhamento psiquiátrico? <br></label>
+            <input type="radio" id="sim" name="psiquiatra" value="sim">Sim<br>
+            <input type="radio" id="nao" name="psiquiatra" value="nao">Não<br>
+        </div>
+        
+        <br><label for="medicação">Medicação:</label>
+        <br><input class=text type="text" id="medicacao" name="medicacao" placeholder="Toma alguma medicação relevante?">
+        
+        <br><br><label for="textareaSintomas">Quais os sintomas mais relevantes que você tem sentido no último mês?</label>
+        <br> <textarea class="textarea" name="textareaSintomas" id="textareaSintomas"></textarea>
+        
+        <br> <br><label for="textareaMotivo">De forma resumida, o que te levou/leva a buscar atendimento?</label>
+        <br><textarea class="textarea" name="textareaMotivo" id="textareaMotivo"></textarea>
+        
+        <br><br><label for="select">Selecione abaixo sua preferência de periodo:</label>
+        <select class="select" id="select" name="select">
             <option value="segundaTarde">Segunda Tarde</option>
             <option value="tercaTarde">Terça Tarde</option>
         </select>
-    </form>
-</div>
-<p> Dados Complementares: Para que eu possa ter uma ideia inicial do seu caso, por favor preencha os dados que
-    achar relevantes a seguir:
-</p>
-<div class="formulario">
-    <form action="#">
-        <label for="cidadeEstado">Cidade/Estado onde reside:</label>
-        <input type="text" id="cidadeEstado" name="cidadeEstado" placeholder="São Paulo/SP">
-        <p>
-            Gênero: <br>
-            <label for="feminino">Feminino</label>
-            <input type="radio" id="feminino" name="genero" value="feminino"><br>
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="masculino" name="genero" value="masculino"><br>
-            <label for="naoBinario">Não Binário</label>
-            <input type="radio" id="naoBinario" name="genero" value="naoBinario"><br>
-        </p>
-        <label for="dataNascimento">Data de Nascimento:</label>
-        <input type="date" id="dataNascimento" name="dataNascimento">
-
-        <label for="profissao">Profissão:</label>
-        <input type="text" id="profissao" name="profissao" placeholder="Sua profissão">
-
-        <label for="textareaSintomas">Quais os sintomas mais relevantes que você tem sentido no último mês?</label>
-        <textarea name="textareaSintomas" id="textareaSintomas"></textarea>
-        <p>
-            Tem tido acompanhamento psiquiátrico? <br>
-            <label for="sim">Sim</label>
-            <input type="radio" id="sim" name="psiquiatra" value="sim"><br>
-            <label for="nao">Não</label>
-            <input type="radio" id="nao" name="psiquiatra" value="nao"><br>
-        </p>
-
-        <label for="medicação">Medicação:</label>
-        <input type="text" id="medicacao" name="medicacao" placeholder="Toma alguma medicação relevante?">
-
-        <label for="textareaMotivo">De forma resumida, o que te levou/leva a buscar atendimento?</label>
-        <textarea name="textareaMotivo" id="textareaMotivo"></textarea>
-
         <div class="btnsubmit">
             <button type="submit" value="submit">Enviar</button>
         </div>
