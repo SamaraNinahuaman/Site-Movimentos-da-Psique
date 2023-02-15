@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="assets/css/style.css">
+
+<h1>Entre em contato conosco!</h1>
+<p>
+    Preencha os campos a seguir para nos enviar uma mensagens, sugestões, elogios e temas para ampliar  
+    os artigos do blog.
+</p>
+<div class="formulario">
+<form action="https://formsubmit.co/sami.dev.nina@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/siteMovimentosPsique/sucessoenvioform.html">
+    <input type="hidden" name="_autoresponse" value="Recebemos seu formulário, obrigado pelo contato, logo responderemos."> 
+    <label for="input-nomeCompleto">Nome completo:</label>
+    <input class= text type="text" id="input-nomeCompleto" name="nomeCompleto" placeholder="Seu nome">
+
+    <br><br><label for="input-telefoneContato">Telefone para contato:</label>
+    <input class= text type="text" id="input-telefoneContato" name="telefoneContato" placeholder="(XX)9 9999-9999">
+
+    <br><br><label for="input-email">Email:</label>
+    <input class= text type="email" id="input-email" name="email" placeholder="email@mail.com">
+
+    <br><br><label for="textarea">Pode escrever à vontade!</label>
+    <textarea name="textarea" id="textarea"></textarea>
+    <div class="btnsubmit">
+        <button type="submit" value="submit">Enviar</button>
+    </div>
+</form>
+</div>

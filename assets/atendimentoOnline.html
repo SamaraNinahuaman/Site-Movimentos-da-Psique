@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="./css/style.css">
+
+<h1>Atendimento Online</h1>
+<h3>Ficha de Inscrição</h3>
+<p>
+    Por favor, preencha abaixo seus dados pessoais para que a psicóloga possa te contatar para fazer os agendamentos.
+    <br>Destaque seu contato preferencial com um *.
+    <br>Estes dados serão utilizados apenas para fazer os agendamentos e não serão divulgados ou disponibilizados para
+    nenhum outro fim.
+</p>
+<div class="formulario">
+    <form action="https://formsubmit.co/sami.dev.nina@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="assets/sucessoenvioform.html">
+        <input type="hidden" name="_autoresponse"
+            value="Recebemos seu formulário, obrigado pelo contato, logo responderemos.">
+        <label for="input-nomeCompleto">Nome completo:</label>
+        <input class=text type="text" id="input-nomeCompleto" name="nomeCompleto" placeholder="Seu nome" required>
+
+        <br><br><label for="input-telefoneContato">Telefone para contato:</label>
+        <input class=text type="text" id="input-telefoneContato" name="telefoneContato" placeholder="(XX)9 9999-9999">
+
+        <br><br><label for="input-email">Email:</label>
+        <input class=text type="email" id="input-email" name="email" placeholder="email@mail.com">
+
+        <br><br><label for="cidadeEstado">Cidade/Estado onde reside:</label>
+        <input class=text type="text" id="cidadeEstado" name="cidadeEstado" placeholder="São Paulo/SP">
+
+        <br><br><label for="dataNascimento">Data de Nascimento:</label>
+        <input class="date" type="date" id="dataNascimento" name="dataNascimento">
+
+        <br><br>
+        <div class="radio">
+            Gênero: <br>
+            <input type="radio" id="feminino" name="genero" value="feminino">Feminino<br>
+            <input type="radio" id="masculino" name="genero" value="masculino">Masculino<br>
+            <input type="radio" id="naoBinario" name="genero" value="naoBinario">Não Binário<br>
+        </div>
+
+        <br><label for="profissao">Profissão:</label>
+        <input class=text type="text" id="profissao" name="profissao" placeholder="Sua profissão">
+
+        <br><br>
+        <div class="radio">
+            <label>Tem tido acompanhamento psiquiátrico? <br></label>
+            <input type="radio" id="sim" name="psiquiatra" value="sim">Sim<br>
+            <input type="radio" id="nao" name="psiquiatra" value="nao">Não<br>
+        </div>
+
+        <br><label for="medicação">Medicação:</label>
+        <br><input class=text type="text" id="medicacao" name="medicacao"
+            placeholder="Toma alguma medicação relevante?">
+
+        <br><br><label for="textareaSintomas">Quais os sintomas mais relevantes que você tem sentido no último
+            mês?</label>
+        <br> <textarea class="textarea" name="textareaSintomas" id="textareaSintomas"></textarea>
+
+        <br> <br><label for="textareaMotivo">De forma resumida, o que te levou/leva a buscar atendimento?</label>
+        <br><textarea class="textarea" name="textareaMotivo" id="textareaMotivo"></textarea>
+
+        <br><br><label for="select">Selecione abaixo sua preferência de periodo:</label>
+        <select class="select" id="select" name="select">
+            <option value="segundaTarde">Segunda Tarde</option>
+            <option value="tercaTarde">Terça Tarde</option>
+        </select>
+        <div class="btnsubmit">
+            <button type="submit" value="submit">Enviar</button>
+        </div>
+    </form>
+
+</div>
